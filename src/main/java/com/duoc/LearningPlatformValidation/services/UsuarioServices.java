@@ -3,6 +3,7 @@ package com.duoc.LearningPlatformValidation.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.duoc.LearningPlatformValidation.model.Usuario;
@@ -23,6 +24,7 @@ public class UsuarioServices {
     // Repositorio inyectado por constructor
     private final UsuarioRepository usuarioRepository;
 
+    @Autowired
     public UsuarioServices(UsuarioRepository usuarioRepository) {
         this.usuarioRepository = usuarioRepository;
     }
