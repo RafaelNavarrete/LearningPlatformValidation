@@ -2,6 +2,7 @@ package com.duoc.LearningPlatformValidation.services;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.duoc.LearningPlatformValidation.model.Inscripcion;
@@ -21,6 +22,7 @@ public class InscripcionService {
     // Repositorio inyectado por constructor
     private final InscripcionRepository inscripcionRepository;
 
+    @Autowired
     public InscripcionService(InscripcionRepository inscripcionRepository) {
         this.inscripcionRepository = inscripcionRepository;
     }

@@ -2,6 +2,7 @@ package com.duoc.LearningPlatformValidation.services;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.duoc.LearningPlatformValidation.model.Evaluacion;
@@ -21,6 +22,7 @@ public class EvaluacionServices {
     // Repositorio inyectado por constructor
     private final EvaluacionRepository evaluacionRepository;
     
+    @Autowired
     public EvaluacionServices(EvaluacionRepository evaluacionRepository) {
         this.evaluacionRepository = evaluacionRepository;
     }

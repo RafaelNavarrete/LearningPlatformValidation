@@ -2,6 +2,7 @@ package com.duoc.LearningPlatformValidation.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,7 @@ public class EvaluacionController {
 
     private final EvaluacionServices evaluacionServices;
 
+    @Autowired
     public EvaluacionController(EvaluacionServices evaluacionServices) {
         this.evaluacionServices = evaluacionServices;
     }

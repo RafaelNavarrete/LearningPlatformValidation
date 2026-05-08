@@ -3,6 +3,7 @@ package com.duoc.LearningPlatformValidation.services;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.duoc.LearningPlatformValidation.model.Curso;
@@ -23,6 +24,7 @@ public class CursoServices {
     private final CursoRepository cursoRepository;
 
 
+    @Autowired
     public CursoServices(CursoRepository cursoRepository) {
         this.cursoRepository = cursoRepository;
     }
